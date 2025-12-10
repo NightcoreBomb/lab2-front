@@ -1,0 +1,63 @@
+/* ---------- базова стилізація сторінки ---------- */
+body{
+    margin:0;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:#f5f5f5;
+}
+
+/* ---------- корпус телефону ---------- */
+.phone{
+    width:260px;
+    height:440px;
+    background:#d6e3bc;          /* зелений корпус */
+    border-radius:16px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:space-between;
+    padding:10px 0;
+    box-shadow:0 4px 10px rgba(0,0,0,.2);
+    outline:1px solid #000;          /* чорне обведення */
+}
+
+/* ---------- екран ---------- */
+.screen{
+    width:80%;
+    height:30%;
+    background:#fff;
+    border-radius:12px;
+    position:relative;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    outline:1px solid #000;          /* чорне обведення */
+    margin-top: 20px;
+}
+
+.time{
+    font-family:'Arial',sans-serif;
+    font-size: 70px;
+    color:#333;
+}
+
+/* ---------- сітка з кнопками (3 × 3) ---------- */
+.buttons{
+    width:90%;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-between;
+    gap:8px;
+}
+
+/* ---------- кнопка – кольору #3f3151, більш заокруглена ---------- */
+.btn{
+    flex:1 1 calc(33.333% - 6px);   /* 3 колонки, 8px розрив */
+    aspect-ratio:1;                 /* квадрат */
+    background:#3f3151;             /* новий колір кнопок */
+    border-radius:12px;             /* заокруглення – збільшуємо до 12px */
+    outline:1px solid #000;          /* чорне обведення */
+    pointer-events:none;
+}
